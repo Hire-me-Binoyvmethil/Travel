@@ -1,0 +1,12 @@
+@import "bootstrap/scss/bootstrap-grid.scss";
+@import "bootstrap/scss/bootstrap-reboot.scss";
+@import "bootstrap/scss/bootstrap.scss";
+
+$primary-bg:#fff;
+.header{
+    background:$primary-bg; 
+    .primary-nav{
+        padding: 10px 0px;
+        border-bottom: 1px solid rgba(4, 8, 56, 0.13);
+    }
+}
