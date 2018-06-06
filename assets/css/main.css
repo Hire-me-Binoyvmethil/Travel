@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700");
 @-ms-viewport {
   width: device-width; }
 html {
@@ -8432,10 +8433,36 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #999; }
+
+.header .primary-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
 .header {
   background: #fff; }
   .header .primary-nav {
-    padding: 10px 0px;
-    border-bottom: 1px solid rgba(4, 8, 56, 0.13); }
+    padding: 3px 0px;
+    border-bottom: 1px solid rgba(4, 8, 56, 0.13);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .primary-nav ul li {
+      display: inline-block; }
+      .header .primary-nav ul li a {
+        color: #999;
+        color: #4C4646;
+        letter-spacing: 0;
+        font-weight: 300; }
+        .header .primary-nav ul li a img {
+          padding-right: 5px; }
+        .header .primary-nav ul li a strong {
+          font-weight: 500; }
+    .header .primary-nav ul:last-child li > a > img {
+      padding-right: 0px; }
 
 /*# sourceMappingURL=main.css.map */
