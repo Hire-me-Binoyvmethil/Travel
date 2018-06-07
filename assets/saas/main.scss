@@ -9,13 +9,23 @@ body{
 }
 $primary-bg:#fff;
 
+//extend classess
 %un-styled-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+%transition-all {
+	-webkit-transition: all 500ms ease-out ;
+    -moz-transition: all 500ms ease-out ;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+//header and navs
 .header{
     background:$primary-bg; 
+    //primary-nav
     .primary-nav{
 	        padding: 3px 0px;
 	        border-bottom: 1px solid rgba(4, 8, 56, 0.13);
@@ -31,6 +41,7 @@ $primary-bg:#fff;
 						color: #4C4646;
 						letter-spacing: 0;
 						font-weight:300;
+						text-decoration:none;
 		        		img{
 		        			padding-right:5px;
 		        		}
@@ -46,5 +57,50 @@ $primary-bg:#fff;
 	    	}
 	    }
 	}
+	//secondary-nav
+	.secondary-nav{
+		padding:20px 0px;
+		.logo{
+			position: absolute;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		    width: 236px;
+		}
+		.navbar-nav >li {
+			a{
+				font-size: 12px;
+				color: #000000;
+				letter-spacing: 0;
+				line-height: 21px;
+				font-weight:500;
+				text-transform:uppercase;
+				@extend %transition-all;
+				&:hover,&:active,&:focus{
+					color: #84A016;
+					letter-spacing: 0;
+				}
+			}
+			&:first-child > a{
+				padding-left:0!important;
+			}
+		}
+			
+		
+
+	}
+	//check-availability
+	.check-availability-container{
+		position: absolute;
+		width:100%;
+		left:0;
+		padding:0 15px;
+		.check-availability{
+			background: #040836;
+			border: 1px solid #040836;
+			padding:0 15px;
+		}
+	}
+	
 }
 

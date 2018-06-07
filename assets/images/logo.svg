@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="236px" height="55px" viewBox="0 0 236 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M71.9599803,6.02557368 L61.3194489,12.8251597 L71.9599803,6.02557368 L71.9714383,6.01047021 L71.9690949,6.01974919 L72,6 L71.9690949,6.01974919 L67.2104083,24.8625013 L64.270223,16.1619013 L71.9599803,6.02557368 Z M30.5636302,55 C24.7766075,55 19.4129949,53.1640352 15,50.0398105 C31.4649266,54.5345003 49.8051741,32.5779115 57.3635808,22.2524486 C57.6622946,23.8944317 57.826002,25.5839551 57.826002,27.3142275 C57.826002,42.6052565 45.620673,55 30.5636302,55 Z" id="path-1"></path>
+    </defs>
+    <g id="lotstravels_index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-841.000000, -63.000000)">
+        <g id="logo" transform="translate(841.000000, 63.000000)">
+            <g id="Group-5">
+                <g id="file">
+                    <g id="Group-3"></g>
+                    <g id="Group-6" transform="translate(53.030769, 6.297710)"></g>
+                    <g id="Group-9" transform="translate(15.230769, 22.391858)"></g>
+                    <g id="Group-12"></g>
+                </g>
+                <path d="M57,17.9348683 C53.2186266,7.48628633 43.0356911,0 31.0610607,0 C15.8646979,0 3.54668979,12.051548 3.54668979,26.9188796 C3.54668979,29.0093939 3.79248187,31.0436421 4.25439663,32.9969991 C2.16994477,33.3081825 0,31.2365153 0,31.2365153 C1.50048475,33.9932813 3.56201664,35.8612073 5.59964427,37.1282273 C5.60934659,37.1513391 5.61834584,37.1748635 5.62818878,37.1981129 C6.51334963,37.7175773 7.46656733,38.1846276 8.48924801,38.5828929 C10.2781307,39.2939924 11.7821308,39.5806884 12.5006648,39.6864797 C21.9976885,41.2942608 36.2100393,37.1110311 57,17.9348683" id="Fill-10" fill="#040836"></path>
+                <polyline id="Clip-5" fill="#040836" points="72 6 60.7164957 12 52 8.66317011 72 6"></polyline>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#84A016" xlink:href="#path-1"></use>
+            </g>
+            <text id="lotsatravel" font-family="EurostileRegular, Eurostile" font-size="36" font-weight="normal">
+                <tspan x="76" y="42" fill="#040836">lotsa</tspan>
+                <tspan x="148.123047" y="42" font-family="EurostileBold, Eurostile" font-weight="bold" fill="#84A016">travel</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
