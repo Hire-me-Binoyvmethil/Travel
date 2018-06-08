@@ -22,6 +22,40 @@ $primary-bg:#fff;
     transition: all 500ms ease-out;
 }
 
+//mixin
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.form-control{
+	 @include border-radius(2px);
+	font-weight:300;
+	color: rgba(4, 8, 54, 0.5);
+	letter-spacing: 0;
+}
+.form-control::-webkit-input-placeholder{
+	color: rgba(4, 8, 54, 0.5);
+    font-weight:300;
+    font-size:14px;
+}
+.form-control::-moz-placeholder{
+	color: rgba(4, 8, 54, 0.5);
+    font-weight:300;
+    font-size:14px;
+}
+.form-control::-moz-placeholder {
+	color: rgba(4, 8, 54, 0.5);
+    font-weight:300;
+    font-size:14px;
+}
+.form-control:-ms-input-placeholder  {
+	color: rgba(4, 8, 54, 0.5);
+    font-weight:300;
+    font-size:14px;
+}
 //header and navs
 .header{
     background:$primary-bg; 
@@ -59,7 +93,7 @@ $primary-bg:#fff;
 	}
 	//secondary-nav
 	.secondary-nav{
-		padding:20px 0px;
+		padding:15px 0px;
 		.logo{
 			position: absolute;
 		    left: 0;
@@ -98,7 +132,33 @@ $primary-bg:#fff;
 		.check-availability{
 			background: #040836;
 			border: 1px solid #040836;
-			padding:0 15px;
+			padding:15px;
+			ul{
+				@extend %un-styled-list;
+				display:flex;
+				justify-content:space-around;
+				align-items:flex-end;
+				li{
+					display:inline-block;
+					vertical-align:middle; 
+					h6{
+						font-size: 16px;
+					    color: #FFFFFF;
+					    letter-spacing: 0;
+					    line-height: 24px;
+					    margin-bottom: 0px;
+					    font-weight:400;
+					}
+					label{
+						margin-bottom:0;
+						display:block;
+						color: #FFFFFF;
+						font-weight:300;
+						font-size: 12px;
+						text-transform:uppercase;
+					}
+				}
+			}
 		}
 	}
 	
