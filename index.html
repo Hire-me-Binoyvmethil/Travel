@@ -12,6 +12,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="vendor/Datedropper/datedropper.min.css" rel="stylesheet">
+    <link href="vendor/Datedropper/my-style.css" rel="stylesheet">
+    
 
     
 
@@ -98,11 +101,11 @@
                     </li>
                     <li>
                       <label>Check in</label>
-                        <input type="text" placeholder="May 28, 2018" class="form-control" >
+                        <input type="text" id="checkIn" placeholder="May 28, 2018" class="form-control" data-theme="my-style" data-large-mode="true"  >
                     </li>
                     <li>
                       <label>Check out</label>
-                        <input type="text" placeholder="May 28, 2018" class="form-control" >
+                        <input type="text"  id="checkOut" placeholder="May 28, 2018" class="form-control"  data-theme="my-style" data-large-mode="true" >
                     </li>
                     <li>
                          <label>adults</label>
@@ -145,7 +148,13 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="vendor/Datedropper/datedropper.min.js"></script>
+    <script>
+      $('#checkIn').dateDropper();
+      $('#checkOut').dateDropper();
+      
+    </script>
+   
   </body>
 
 </html>
