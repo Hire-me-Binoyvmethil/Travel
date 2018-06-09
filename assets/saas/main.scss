@@ -2,33 +2,26 @@
 @import "bootstrap/scss/bootstrap-reboot.scss";
 @import "bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+/*base,components and modules */
+@import 'partials/base/_variables.scss';
+@import 'partials/base/_mixins.scss';
+@import 'partials/modules/_typography.scss';
+@import 'partials/modules/_buttons.scss';
+@import 'partials/modules/_components.scss';
+@import 'partials/modules/_forms.scss';
+@import 'partials/layout/_header.scss';
+@import 'partials/layout/_footer.scss';
+
+
+
 body{
-	font-family: 'Poppins', sans-serif;
-	font-size:14px;
+	font-family: $base-font-family;
+	font-size:$base-font-size;
 	color:#999;
 }
-$primary-bg:#fff;
 
-//extend classess
-%un-styled-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-%transition-all {
-	-webkit-transition: all 500ms ease-out ;
-    -moz-transition: all 500ms ease-out ;
-    -o-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
-}
 
-//mixin
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
+
 
 .form-control{
 	 @include border-radius(2px);
@@ -56,111 +49,5 @@ $primary-bg:#fff;
     font-weight:300;
     font-size:14px;
 }
-//header and navs
-.header{
-    background:$primary-bg; 
-    //primary-nav
-    .primary-nav{
-	        padding: 3px 0px;
-	        border-bottom: 1px solid rgba(4, 8, 56, 0.13);
-	        display:flex;
-	        justify-content:space-between;
-	        align-items:center;
-	        ul{
-	        	@extend %un-styled-list;
-	        	li{
-	        		    display: inline-block;
-		        	a{
-		        		color:#999;
-						color: #4C4646;
-						letter-spacing: 0;
-						font-weight:300;
-						text-decoration:none;
-		        		img{
-		        			padding-right:5px;
-		        		}
-		        		strong{
-		        			font-weight:500;
-		        		}
-		        	}
-	        }
-	    }
-	    ul:last-child{
-	    	li >a >img{
-	    		padding-right:0px;
-	    	}
-	    }
-	}
-	//secondary-nav
-	.secondary-nav{
-		padding:15px 0px;
-		.logo{
-			position: absolute;
-		    left: 0;
-		    right: 0;
-		    margin: auto;
-		    width: 236px;
-		}
-		.navbar-nav >li {
-			a{
-				font-size: 12px;
-				color: #000000;
-				letter-spacing: 0;
-				line-height: 21px;
-				font-weight:500;
-				text-transform:uppercase;
-				@extend %transition-all;
-				&:hover,&:active,&:focus{
-					color: #84A016;
-					letter-spacing: 0;
-				}
-			}
-			&:first-child > a{
-				padding-left:0!important;
-			}
-		}
-			
-		
 
-	}
-	//check-availability
-	.check-availability-container{
-		position: absolute;
-		width:100%;
-		left:0;
-		padding:0 15px;
-		.check-availability{
-			background: #040836;
-			border: 1px solid #040836;
-			padding:15px;
-			ul{
-				@extend %un-styled-list;
-				display:flex;
-				justify-content:space-around;
-				align-items:flex-end;
-				li{
-					display:inline-block;
-					vertical-align:middle; 
-					h6{
-						font-size: 16px;
-					    color: #FFFFFF;
-					    letter-spacing: 0;
-					    line-height: 24px;
-					    margin-bottom: 0px;
-					    font-weight:400;
-					}
-					label{
-						margin-bottom:0;
-						display:block;
-						color: #FFFFFF;
-						font-weight:300;
-						font-size: 12px;
-						text-transform:uppercase;
-					}
-				}
-			}
-		}
-	}
-	
-}
 

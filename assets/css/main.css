@@ -8433,50 +8433,45 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  color: #999; }
-
+/*base,components and modules */
+/* Font Specification */
+/* Color Palette*/
 .header .primary-nav ul, .header .check-availability-container .check-availability ul {
   padding: 0;
   margin: 0;
   list-style: none; }
 
-.header .secondary-nav .navbar-nav > li a {
+.btn-primary, .header .secondary-nav .navbar-nav > li a {
   -webkit-transition: all 500ms ease-out;
   -moz-transition: all 500ms ease-out;
   -o-transition: all 500ms ease-out;
   transition: all 500ms ease-out; }
 
-.form-control {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
+.btn-primary {
+  background: #84A016;
   border-radius: 2px;
-  font-weight: 300;
-  color: rgba(4, 8, 54, 0.5);
-  letter-spacing: 0; }
+  border-color: #84A016;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-weight: 500;
+  padding: 8px 15px; }
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #6f8712;
+    border-color: #6f8712;
+    box-shadow: none; }
 
-.form-control::-webkit-input-placeholder {
-  color: rgba(4, 8, 54, 0.5);
-  font-weight: 300;
-  font-size: 14px; }
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #6f8712;
+  border-color: #6f8712;
+  box-shadow: none; }
 
-.form-control::-moz-placeholder {
-  color: rgba(4, 8, 54, 0.5);
-  font-weight: 300;
-  font-size: 14px; }
-
-.form-control::-moz-placeholder {
-  color: rgba(4, 8, 54, 0.5);
-  font-weight: 300;
-  font-size: 14px; }
-
-.form-control:-ms-input-placeholder {
-  color: rgba(4, 8, 54, 0.5);
-  font-weight: 300;
-  font-size: 14px; }
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none; }
 
 .header {
   background: #fff; }
@@ -8550,5 +8545,39 @@ body {
             font-weight: 300;
             font-size: 12px;
             text-transform: uppercase; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #999; }
+
+.form-control {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  font-weight: 300;
+  color: rgba(4, 8, 54, 0.5);
+  letter-spacing: 0; }
+
+.form-control::-webkit-input-placeholder {
+  color: rgba(4, 8, 54, 0.5);
+  font-weight: 300;
+  font-size: 14px; }
+
+.form-control::-moz-placeholder {
+  color: rgba(4, 8, 54, 0.5);
+  font-weight: 300;
+  font-size: 14px; }
+
+.form-control::-moz-placeholder {
+  color: rgba(4, 8, 54, 0.5);
+  font-weight: 300;
+  font-size: 14px; }
+
+.form-control:-ms-input-placeholder {
+  color: rgba(4, 8, 54, 0.5);
+  font-weight: 300;
+  font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */
