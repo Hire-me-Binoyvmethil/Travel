@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>lostatravel</title>
-
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/main.css" rel="stylesheet">
     <link href="vendor/Datedropper/datedropper.min.css" rel="stylesheet">
     <link href="vendor/Datedropper/my-style.css" rel="stylesheet">
+    <link href="vendor/OwlCarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="vendor/OwlCarousel/assets/owl.theme.green.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
     
-
     
 
   </head>
@@ -129,30 +129,49 @@
              </div>
       </div>
    </header>
-
-
     <!-- Page Content -->
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-          <ul class="list-unstyled">
-            <li>Bootstrap 4.1.1</li>
-            <li>jQuery 3.3.1</li>
-          </ul>
+    <section class="banner" id="bannerSection">
+      <div class="owl-carousel owl-theme" id="banner">
+        <div class="item banner-img-1">
+              <div class="container">
+                  <div class="banner-text">
+                    <h6>FIND YOUR SPECIAL TOUR TODAY WITH LOTSATRAVEL AGENCY</h6>
+                    <h1>Leisure stays <br/>
+                      on a suburban hillside in Wayanad</h1>
+                </div>
+            </div>
         </div>
+        <div class="item banner-img-1">
+            <div class="container">
+                <div class="banner-text">
+                  <h6>FIND YOUR SPECIAL TOUR TODAY WITH LOTSATRAVEL AGENCY</h6>
+                  <h1>Leisure stays <br/>
+                    on a suburban hillside in Wayanad</h1>
+              </div>
+          </div>
       </div>
-    </div> -->
+    </div>
+    </section>
+
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/Datedropper/datedropper.min.js"></script>
+    <script src="vendor/OwlCarousel/owl.carousel.min.js"></script>
+
     <script>
       $('#checkIn').dateDropper();
       $('#checkOut').dateDropper();
-      
+      $('#banner').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        items:1,
+        dots:false,
+        navText: ["<img src='assets/images/arrow-left.png'>","<img src='assets/images/arrow-right.png'>"]
+    })
     </script>
    
   </body>

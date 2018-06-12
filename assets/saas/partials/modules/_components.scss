@@ -1,0 +1,58 @@
+// banenr
+
+.banner{
+    .owl-carousel {
+        .item{
+            background-size: cover;
+            height: 924px;
+            background-position: center center;
+            .container{
+            position: relative;
+                .banner-text{
+                    position: absolute;
+                    width: 100%;
+                    top: 320px;
+                    left:0;
+                    text-align: center;
+                    h6{
+                        font-weight: 500;
+                        font-size: 24px;
+                        color: #FFFFFF;
+                        letter-spacing: 0.8px;
+                        margin-top: 95px;
+                    }
+                    h1{
+                        font-weight: 400;
+                        font-size: 46px;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        line-height: 50px;
+                    }
+                }
+            }
+       }
+       .owl-nav{
+            position: absolute;
+            top: 50%;
+            width: 1170px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            .owl-prev{
+                float: left;
+                &:hover{
+                    background: transparent;
+                }
+            }
+            .owl-next{
+                float: right;
+                &:hover{
+                    background: transparent;
+                }
+            }
+       }
+        .banner-img-1{
+            background-image: url(../images/banner.jpg);
+        }
+    }
+}

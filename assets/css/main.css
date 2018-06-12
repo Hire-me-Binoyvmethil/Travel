@@ -8473,6 +8473,48 @@ a.text-dark:hover, a.text-dark:focus {
 .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: none; }
 
+.banner .owl-carousel .item {
+  background-size: cover;
+  height: 924px;
+  background-position: center center; }
+  .banner .owl-carousel .item .container {
+    position: relative; }
+    .banner .owl-carousel .item .container .banner-text {
+      position: absolute;
+      width: 100%;
+      top: 320px;
+      left: 0;
+      text-align: center; }
+      .banner .owl-carousel .item .container .banner-text h6 {
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+        letter-spacing: 0.8px;
+        margin-top: 95px; }
+      .banner .owl-carousel .item .container .banner-text h1 {
+        font-weight: 400;
+        font-size: 46px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 50px; }
+.banner .owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 1170px;
+  left: 0;
+  right: 0;
+  margin: auto; }
+  .banner .owl-carousel .owl-nav .owl-prev {
+    float: left; }
+    .banner .owl-carousel .owl-nav .owl-prev:hover {
+      background: transparent; }
+  .banner .owl-carousel .owl-nav .owl-next {
+    float: right; }
+    .banner .owl-carousel .owl-nav .owl-next:hover {
+      background: transparent; }
+.banner .owl-carousel .banner-img-1 {
+  background-image: url(../images/banner.jpg); }
+
 .header {
   background: #fff; }
   .header .primary-nav {
