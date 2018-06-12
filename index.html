@@ -15,13 +15,8 @@
     <link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
     <link href="vendor/OwlCarousel/assets/owl.theme.green.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-    
-    
-
   </head>
-
   <body>
-
     <!-- Navigation -->
     <header class="header fixed-top">
       <div class="container position-relative">
@@ -93,6 +88,7 @@
                 </div>
             </nav>
              <!--// secondary nav -->
+            <!-- check availability -->
              <div class="check-availability-container">
                 <div class="check-availability">
                   <ul>
@@ -125,11 +121,13 @@
                     </li>
                   </ul>
                 </div>
-               
              </div>
+              <!-- //check availability -->
       </div>
    </header>
     <!-- Page Content -->
+
+    <!--Banner  -->
     <section class="banner" id="bannerSection">
       <div class="owl-carousel owl-theme" id="banner">
         <div class="item banner-img-1">
@@ -152,8 +150,36 @@
       </div>
     </div>
     </section>
-
-
+    <!--Banner  -->
+   <!--What We Offer  -->
+    <section class="what-we-offer">
+       <div class="container">
+          <h6>WHAT WE OFFER</h6>
+          <h1>It is an experience you will <br/>treasure.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean vitae turpis<br/>
+              Proin eu lacus non eros tempus.</p>
+       </div>
+    </section>
+    <!--What We Offer  -->
+    <!--Our Locations  -->
+    <section class="our-locations">
+       <div class="container">
+          <div class="locatios-wrap">
+           <div class="owl-carousel owl-theme" id="locations">
+                <div class="item">
+                   <img src="assets/images/slider.jpg">
+                </div>
+                <div class="item">
+                   <img src="assets/images/slider.jpg">
+                </div>
+             </div>
+          </div>
+          <div class="view-more">
+               <a href="#">VIEW MORE</a>
+          </div>
+       </div>
+    </section>
+    <!--Our Locations   -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -171,7 +197,14 @@
         items:1,
         dots:false,
         navText: ["<img src='assets/images/arrow-left.png'>","<img src='assets/images/arrow-right.png'>"]
-    })
+    });
+   $('#locations').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:false,
+            items:1,
+            dots:true
+        });
     </script>
    
   </body>

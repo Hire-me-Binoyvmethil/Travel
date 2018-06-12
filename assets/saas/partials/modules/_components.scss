@@ -1,5 +1,4 @@
-// banenr
-
+// Banner
 .banner{
     .owl-carousel {
         .item{
@@ -16,7 +15,7 @@
                     text-align: center;
                     h6{
                         font-weight: 500;
-                        font-size: 24px;
+                        font-size: 20px;
                         color: #FFFFFF;
                         letter-spacing: 0.8px;
                         margin-top: 95px;
@@ -55,4 +54,92 @@
             background-image: url(../images/banner.jpg);
         }
     }
+}
+
+// WHAT WE OFFER
+.what-we-offer{
+    background-color:#fff;
+    padding:30px 0 200px 0; 
+    text-align:center;
+    h6{
+        font-weight: 500;
+        font-size: 20px;
+        color: #999999;
+        letter-spacing: 4.8px;
+    }
+    h1{
+        font-weight: 400;
+        font-size: 46px;
+        color: #84A016;
+        letter-spacing: 0;
+        line-height: 50px;
+    }
+    p{
+        font-weight: 200;
+        font-size: 14px;
+        color: #999999;
+        letter-spacing: 0;
+        line-height: 16px;
+    }
+}
+
+// Our Locarions
+.our-locations{
+    padding:20px 0;
+    background:url("../images/testimonial_BG.jpg");
+    
+    .container{
+        position:relative;
+        .locatios-wrap{
+            -webkit-box-shadow: 1px 1px 1px 3px #6c6d6c; 
+            box-shadow: 1px 1px 1px 3px #6c6d6c;
+            width:710px;
+            padding:10px;
+            margin-top:-180px;
+            margin-left:auto;
+            margin-right:auto;
+            .owl-theme {
+                position:relative;
+               .owl-dots{
+                     position:absolute;
+                     bottom:10px;
+                     width:100%;
+                     .owl-dot{
+                        width:12px;
+                        height:12px;
+                        border: 1px solid #FFFFFF;
+                        border-radius:50%;
+                        margin-right:10px;
+                        span{
+                            background:transparent;
+                            width: 4px;
+                            height: 4px;
+                            margin: -1px 3px;
+                        }
+
+                     }
+                     .owl-dot.active{
+                          span{
+                              border:solid #fff 1px;
+                          }  
+                        }
+
+                }
+            }
+           
+        }
+        .view-more{
+                text-align:center;
+                padding:30px 0 0px 0;
+                a{
+                    display:inline-block;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #84A016;
+                    letter-spacing: 3.6px; 
+                }
+            }
+
+    }
+    
 }
