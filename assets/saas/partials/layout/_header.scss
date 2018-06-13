@@ -5,7 +5,11 @@
     .primary-nav{
 	        padding: 3px 0px;
 	        border-bottom: 1px solid rgba(4, 8, 56, 0.13);
-	        display:flex;
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	        justify-content:space-between;
 	        align-items:center;
 	        ul{
@@ -91,7 +95,11 @@
 			padding:15px;
 			ul{
 				@extend %un-styled-list;
-				display:flex;
+				display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+				display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+				display: -ms-flexbox;      /* TWEENER - IE 10 */
+				display: -webkit-flex;     /* NEW - Chrome */
+				display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 				justify-content:space-around;
 				align-items:flex-end;
 				li{

@@ -8814,7 +8814,16 @@ p {
   .header .primary-nav {
     padding: 3px 0px;
     border-bottom: 1px solid rgba(4, 8, 56, 0.13);
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     align-items: center; }
     .header .primary-nav ul li {
@@ -8871,7 +8880,16 @@ p {
       border: 1px solid #040836;
       padding: 15px; }
       .header .check-availability-container .check-availability ul {
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
         display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
         justify-content: space-around;
         align-items: flex-end; }
         .header .check-availability-container .check-availability ul li {
