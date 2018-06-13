@@ -26,3 +26,24 @@
  .show > .btn-primary.dropdown-toggle:focus{
     box-shadow: none;
  }
+
+ .btn-go{
+    position:absolute;
+    width:32px;
+    height:32px;
+    line-height:32px;
+    text-align:center;
+    font-size:14px;
+    color:rgba(255,255,255, 1);
+    background:#719200;
+    border-radius:50%;
+    padding:0;
+    right: 5px;
+    top: 2px;
+    @extend %transition-all;
+    &:hover,&:active,&:focus{
+        background: #6f8712;
+        box-shadow: none;
+    }
+    
+}

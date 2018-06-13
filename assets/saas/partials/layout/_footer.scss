@@ -78,10 +78,43 @@
 					color: rgba(255,255,255, 0.5);
 					letter-spacing: 0;
 					display:block;
+					@extend %transition-all;
 
  				}
 			}
 		}
+	}
+	.subscribe{
+		position:relative;
+		margin-top:25px;
+		.form-control{
+			border: 1px solid rgba(255,255,255, 0.49);
+			border-radius: 32px;
+			color:rgba(255,255,255, 0.5);
+			background:transparent;
+			padding-right:50px;
+		}
+		.form-control::-webkit-input-placeholder{
+			color: rgba(255,255,255, 0.49);
+		    font-weight:300;
+		    font-size:14px;
+		}
+		.form-control::-moz-placeholder{
+			color: rgba(255,255,255, 0.49);
+		    font-weight:300;
+		    font-size:14px;
+		}
+		.form-control::-moz-placeholder {
+			color: rrgba(255,255,255, 0.49);
+		    font-weight:300;
+		    font-size:14px;
+		}
+		.form-control:-ms-input-placeholder  {
+			color:rgba(255,255,255, 0.49);
+		    font-weight:300;
+		    font-size:14px;
+		}
+
 	}
 	.copy-right{
 		padding-top:20px;
