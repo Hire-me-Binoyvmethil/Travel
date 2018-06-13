@@ -1,7 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
 @import "bootstrap/scss/bootstrap-grid.scss";
 @import "bootstrap/scss/bootstrap-reboot.scss";
 @import "bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
 /*base,components and modules */
 @import 'partials/base/_variables.scss';
 @import 'partials/base/_mixins.scss';
@@ -12,17 +14,12 @@
 @import 'partials/layout/_header.scss';
 @import 'partials/layout/_footer.scss';
 
-
-
+$base-font-family:'Poppins', sans-serif;
 body{
 	font-family: $base-font-family;
 	font-size:$base-font-size;
 	color:#999;
 }
-
-
-
-
 .form-control{
 	 @include border-radius(2px);
 	font-weight:300;

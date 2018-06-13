@@ -1,0 +1,95 @@
+.footer{
+	padding:45px 0 25px 0;
+	background-color:#040836;
+	h6{
+		color:#fff;
+		margin-bottom:25px;
+		font-weight:300;
+		letter-spacing: 1px;
+	}
+	p{
+		font-size:12px;
+		color:rgba(255,255,255, 0.5);
+		margin-bottom:10px;
+	}
+	h5{
+		margin:0;
+		line-height:4px;
+	}
+	.social-icons{
+		margin-top:30px;
+		ul{
+			@extend %un-styled-list;
+			li{
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				margin: 0 8px 0 0;
+				text-align: center;
+				cursor: pointer;
+				border-radius: 50%;
+				border: 1px solid rgba(255,255,255, 0.5);
+				transition: all 0.5s ease;
+				display:inline-block;
+				  a{
+				  	i{
+					  	  color: rgba(255,255,255, 0.5);
+						  transition: all 0.5s ease;
+					  }
+					  &:hover{
+					  		.facebook {
+							  border: 5px solid #3b5998;
+							  box-shadow: 0 0 15px #3b5998;
+							  transition: all 0.5s ease;
+							}
+					  }
+				  }
+				 &:hover{
+				   	transition: all 0.5s ease;
+				  }
+				  &:hover.facebook {
+					 border: 1px solid #3b5998;
+					 box-shadow: 0 0 15px #3b5998;
+				 }
+				&:hover.twitter {
+					 border: 1px solid #00aced;
+					 box-shadow: 0 0 15px #00aced;
+				}
+				&:hover.tripadvisor {
+					 border: 1px solid #ffea96;
+					 box-shadow: 0 0 15px #ffea96;
+				}
+				  
+			}
+		}
+	}
+	.useful-links{
+		width:135px;
+		margin:0 auto;
+		ul{
+			list-style-image: url('../images/bullet.svg');
+			text-align:left;
+			margin:0;
+			padding: 0 0 0 15px;
+			li{
+				margin-bottom:5px;
+ 				a{
+					font-size: 12px;
+					color: rgba(255,255,255, 0.5);
+					letter-spacing: 0;
+					display:block;
+
+ 				}
+			}
+		}
+	}
+	.copy-right{
+		padding-top:20px;
+		margin-top:20px;
+		border-top:solid rgba(255,255,255, 0.5) 1px;
+		text-align:center;
+		p{
+			margin-bottom:0;
+		}
+	}
+}

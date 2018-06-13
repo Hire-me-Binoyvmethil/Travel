@@ -20,6 +20,14 @@
 						text-decoration:none;
 		        		img{
 		        			padding-right:5px;
+		        			 -webkit-transition: -webkit-transform .8s ease-in-out;
+							    -ms-transition: -ms-transform .8s ease-in-out;
+							    transition: transform .8s ease-in-out;
+							    &:hover{
+							    	 transform:rotate(360deg);
+								    -ms-transform:rotate(360deg);
+								    -webkit-transform:rotate(360deg);
+							    }
 		        		}
 		        		strong{
 		        			font-weight:500;
