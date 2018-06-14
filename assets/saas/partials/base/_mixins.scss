@@ -5,6 +5,34 @@
         -ms-border-radius: $radius;
             border-radius: $radius;
   }
+$break-small: 320px;
+$break-small-lg: 767px;
+$break-medium: 768px;
+$break-medium-lg: 991px;
+$break-large: 1024px;
+$break-large-lg: 1199px;
+$break-md-large: 1200px;
+$break-md-large-lg: 10366px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small-lg) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-medium) and (max-width: $break-medium-lg) { @content; }
+  }
+  @else if $media == medium-screens-lanscape {
+    @media only screen and (min-width: $break-large) and (max-width: $break-large-lg) { @content; }
+  }
+  @else if $media == wide-screens {
+     @media only screen and (min-width: $break-md-large) and (max-width: $break-md-large-lg) { @content; }
+  }
+  
+}
+
+
+
+
 
 //extend classess
 %un-styled-list {
@@ -19,3 +47,5 @@
       transition: all 500ms ease-out;
   }
   
+
+
