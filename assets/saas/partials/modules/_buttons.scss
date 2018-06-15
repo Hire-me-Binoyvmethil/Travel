@@ -8,11 +8,15 @@
     font-weight: 500;
     padding: 8px 15px;
     @extend %transition-all;
+    @include respond-to(medium-screens) { 
+         padding: 8px 8px;
+    }
     &:hover,&:active,&:focus{
         background-color: #6f8712;
         border-color: #6f8712;
         box-shadow: none;
     }
+
 }
 .btn-primary:not(:disabled):not(.disabled):active, 
 .btn-primary:not(:disabled):not(.disabled).active,

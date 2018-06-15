@@ -7,16 +7,21 @@
   }
 $break-small: 320px;
 $break-small-lg: 767px;
+$break-small-ls-sm: 480px;
+$break-small-ls-lg: 600px;
 $break-medium: 768px;
 $break-medium-lg: 991px;
-$break-large: 1024px;
-$break-large-lg: 1199px;
+$break-large: 992px;
+$break-large-lg: 1024px;
 $break-md-large: 1200px;
 $break-md-large-lg: 10366px;
 
 @mixin respond-to($media) {
   @if $media == handhelds {
     @media only screen and (max-width: $break-small-lg) { @content; }
+  }
+  @else if $media == handhelds-ls {
+    @media only screen and (min-width: $break-small-ls-sm) and (max-width: $break-small-ls-lg) { @content; }
   }
   @else if $media == medium-screens {
     @media only screen and (min-width: $break-medium) and (max-width: $break-medium-lg) { @content; }
